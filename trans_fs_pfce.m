@@ -1,4 +1,4 @@
-function [ b_s ] = trans_fs_pfce( Xm,Xs,ys,b_mm)
+function [ b_s ] = trans_fs_pfce( Xm,Xs,ys,b_m)
 % -------------------------------------------
 % Calibration enhancement by using full-supervised Parameter-Free Framework
 % for Calibration Enhancemen (fs-PEFC). 
@@ -11,7 +11,7 @@ function [ b_s ] = trans_fs_pfce( Xm,Xs,ys,b_mm)
 %       ys (M×1) The reference value of master used for calibration enhancment.
 %                 The Xm, Xs and ys should obtained from the same
 %                 samples and correspond one by one.
-%       b_mm (N+1)×1 The linear model coefficient of master. The model can be 
+%       b_m (N+1)×1 The linear model coefficient of master. The model can be 
 %                     build by any linear fit method such as least
 %                     regression, ridge regression and partial least squares
 %                     regression, etc. The The intercept should be included 
@@ -22,11 +22,9 @@ function [ b_s ] = trans_fs_pfce( Xm,Xs,ys,b_mm)
 %    [1] A Parameter-Free Framework for Calibration Enhancement of Near-Infrared Spectroscopy Based on Correlation Constraint
 %   Copyright Zhang Jin (zhangjin@mail.nankai.edu.cn).
 % -------------------------------------------
-global b_m
-b_m = b_mm;
 options = optimoptions('fmincon','Display','iter','Algorithm','sqp');
 fun = @(b_s)(((ys-[ones(size(Xs,1),1) Xs]*b_s)'*(ys-[ones(size(Xs,1),1) Xs]*b_s))+...
-    (([ones(size(Xm,1),1) Xm]*b_mm-[ones(size(Xs,1),1) Xs]*b_s)'*([ones(size(Xm,1),1) Xm]*b_mm-[ones(size(Xs,1),1) Xs]*b_s)));%目标函数
+    (([ones(size(Xm,1),1) Xm]*b_m-[ones(size(Xs,1),1) Xs]*b_s)'*([ones(size(Xm,1),1) Xm]*b_m-[ones(size(Xs,1),1) Xs]*b_s)));%目标函数
 
 A = [];
 b = [];
@@ -35,11 +33,10 @@ beq = [];
 lb = [];
 ub = [];
 x0 = b_m;
-b_s = fmincon(fun,x0,A,b,Aeq,beq,lb,ub,@mycon,options);%线性
+b_s = fmincon(fun,x0,A,b,Aeq,beq,lb,ub,@(b_s)mycon(b_s,b_m),options);%线性
 end
 
-function [c,ceq]=mycon(b_s)
-global b_m
+function [c,ceq]=mycon(b_s,b_m)
 r = corrcoef(b_s(2:end),b_m(2:end));
 c = 0.98-r(1,2);
 ceq = [];
