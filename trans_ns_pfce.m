@@ -22,7 +22,7 @@ function [ b_s ] = trans_ns_pfce( Xm,Xs,b_m)
 %   Copyright Zhang Jin (zhangjin@mail.nankai.edu.cn).
 % -------------------------------------------
 options = optimoptions('fmincon','Display','iter','Algorithm','sqp','UseParallel',false);
-fun = @(b_s)(([ones(size(Xm,1),1) Xm]*b_m-[ones(size(Xs,1),1) Xs]*b_s)'*([ones(size(Xm,1),1) Xm]*b_m-[ones(size(Xs,1),1) Xs]*b_s));%Ä¿±êº¯Êý
+fun = @(b_s)(([ones(size(Xm,1),1) Xm]*b_m-[ones(size(Xs,1),1) Xs]*b_s)'*([ones(size(Xm,1),1) Xm]*b_m-[ones(size(Xs,1),1) Xs]*b_s));%Objective function
 
 A = [];
 b = [];
@@ -31,7 +31,7 @@ beq = [];
 lb = [];
 ub = [];
 x0 = b_m;
-b_s = fmincon(fun,x0,A,b,Aeq,beq,lb,ub,@(b_s)mycon(b_s,b_m),options);
+b_s = fmincon(fun,x0,A,b,Aeq,beq,lb,ub,@(b_s)mycon(b_s,b_m),options);%Optimization
 end
 
 

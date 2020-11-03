@@ -24,7 +24,7 @@ function [ b_s ] = trans_fs_pfce( Xm,Xs,ys,b_m)
 % -------------------------------------------
 options = optimoptions('fmincon','Display','iter','Algorithm','sqp');
 fun = @(b_s)(((ys-[ones(size(Xs,1),1) Xs]*b_s)'*(ys-[ones(size(Xs,1),1) Xs]*b_s))+...
-    (([ones(size(Xm,1),1) Xm]*b_m-[ones(size(Xs,1),1) Xs]*b_s)'*([ones(size(Xm,1),1) Xm]*b_m-[ones(size(Xs,1),1) Xs]*b_s)));%目标函数
+    (([ones(size(Xm,1),1) Xm]*b_m-[ones(size(Xs,1),1) Xs]*b_s)'*([ones(size(Xm,1),1) Xm]*b_m-[ones(size(Xs,1),1) Xs]*b_s))); %Objective function
 
 A = [];
 b = [];
@@ -33,7 +33,7 @@ beq = [];
 lb = [];
 ub = [];
 x0 = b_m;
-b_s = fmincon(fun,x0,A,b,Aeq,beq,lb,ub,@(b_s)mycon(b_s,b_m),options);%线性
+b_s = fmincon(fun,x0,A,b,Aeq,beq,lb,ub,@(b_s)mycon(b_s,b_m),options); %Optimization
 end
 
 function [c,ceq]=mycon(b_s,b_m)

@@ -21,7 +21,7 @@ function [ b_s ] = trans_ss_pfce( Xs,ys,b_m)
 %   Copyright Zhang Jin (zhangjin@mail.nankai.edu.cn).
 % -------------------------------------------
 options = optimoptions('fmincon','Display','iter','Algorithm','sqp');
-fun = @(b_s)((ys-[ones(size(Xs,1),1) Xs]*b_s)'*(ys-[ones(size(Xs,1),1) Xs]*b_s));%目标函数
+fun = @(b_s)((ys-[ones(size(Xs,1),1) Xs]*b_s)'*(ys-[ones(size(Xs,1),1) Xs]*b_s));%Objective function
 
 A = [];
 b = [];
@@ -30,7 +30,7 @@ beq = [];
 lb = [];
 ub = [];
 x0 = b_m;
-b_s = fmincon(fun,x0,A,b,Aeq,beq,lb,ub,@(b_s)mycon(b_s,b_m),options);%线性
+b_s = fmincon(fun,x0,A,b,Aeq,beq,lb,ub,@(b_s)mycon(b_s,b_m),options);%Optimization
 end
 
 
