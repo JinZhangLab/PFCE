@@ -20,7 +20,7 @@ function [ b_s ] = trans_ss_pfce( Xs,ys,b_m)
 %    [1] A Parameter-Free Framework for Calibration Enhancement of Near-Infrared Spectroscopy Based on Correlation Constraint
 %   Copyright Zhang Jin (zhangjin@mail.nankai.edu.cn).
 % -------------------------------------------
-options = optimoptions('fmincon','Display','iter','Algorithm','sqp');
+options = optimoptions('fmincon','Display','none','Algorithm','sqp');
 fun = @(b_s)((ys-[ones(size(Xs,1),1) Xs]*b_s)'*(ys-[ones(size(Xs,1),1) Xs]*b_s));%Objective function
 
 A = [];

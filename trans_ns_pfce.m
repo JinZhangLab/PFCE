@@ -6,8 +6,7 @@ function [ b_s ] = trans_ns_pfce( Xm,Xs,b_m)
 %       Xm (M¡ÁN) The spectra of master used for calibration enhancment. The
 %                 M and N are the numer of samples and variables of master spectra,
 %                 respectively.
-%       Xs (M¡ÁS) The spectra of master used for calibration enhancment. The
-%                 S is the numer of variables of slave spectra. The Xm and Xs
+%       Xs (M¡ÁN) The spectra of master used for calibration enhancment. The Xm and Xs
 %                 should obtained from the same
 %                 samples and correspond one by one.
 %       b_m (N+1)¡Á1 The linear model coefficient of master. The model can be 
@@ -21,7 +20,7 @@ function [ b_s ] = trans_ns_pfce( Xm,Xs,b_m)
 %    [1] A Parameter-Free Framework for Calibration Enhancement of Near-Infrared Spectroscopy Based on Correlation Constraint
 %   Copyright Zhang Jin (zhangjin@mail.nankai.edu.cn).
 % -------------------------------------------
-options = optimoptions('fmincon','Display','iter','Algorithm','sqp','UseParallel',false);
+options = optimoptions('fmincon','Display','none','Algorithm','sqp','UseParallel',false);
 fun = @(b_s)(([ones(size(Xm,1),1) Xm]*b_m-[ones(size(Xs,1),1) Xs]*b_s)'*([ones(size(Xm,1),1) Xm]*b_m-[ones(size(Xs,1),1) Xs]*b_s));%Objective function
 
 A = [];
