@@ -6,4 +6,4 @@ A new parameter-free framework for calibration enhancement (PFCE) was proposed f
 
 If the progrom is helpful for you, please cite the following paper:
 
-[1] J Zhang, BY Li, Y Hu, et. al. A Parameter-Free Framework for Calibration Enhancement of Near-Infrared Spectroscopy Based on Correlation Constraint, analytica chimica acta, 2021.
+[1] J Zhang, BY Li, Y Hu, et. al. A Parameter-Free Framework for Calibration Enhancement of Near-Infrared Spectroscopy Based on Correlation Constraint, analytica chimica acta, 2021. https://doi.org/10.1016/j.aca.2020.11.006
