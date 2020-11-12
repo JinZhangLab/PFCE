@@ -16,6 +16,6 @@ Run demo_tablet.m script directly in Matlab environment
 ![Image](https://github.com/JinZhangLab/PFCE/blob/ccb9f7b9312c999593d3ae2357b53d1eb2f3b083/TOC.jpg)
 
 ---
-# If the progrom is helpful for you, please cite the following paper:
+# If this method is useful, please cite this paper:
 
 [1] J Zhang, BY Li, Y Hu, et. al. A Parameter-Free Framework for Calibration Enhancement of Near-Infrared Spectroscopy Based on Correlation Constraint, analytica chimica acta, 2021, 1142: 169-178. https://doi.org/10.1016/j.aca.2020.11.006
