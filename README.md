@@ -41,9 +41,14 @@ The PFCEs can be also used with python package at [pynir](https://pypi.org/proje
 ## Successful applications
 | Method | Application | Reference |
 |--------|-------------|----------|
-| SS-PFCE | Batch-to-batch variability of fruit samples in portable spectroscopy | [Mishra, 2021](https://www.sciencedirect.com/science/article/pii/S0003267021005973) |
-| NS- and SS-PFCE | Calibration transfer from point spectrometers to visible/near-infrared spectral imaging machines | [Mishra, 2021](https://www.sciencedirect.com/science/article/pii/S0003267021009806)|
+| SS-PFCE | Batch-to-batch variability of fruit samples in portable spectroscopy | [Mishra, et al., 2021](https://www.sciencedirect.com/science/article/pii/S0003267021005973) |
+| NS- and SS-PFCE | Calibration transfer from point spectrometers to visible/near-infrared spectral imaging machines | [Mishra, et al., 2021](https://www.sciencedirect.com/science/article/pii/S0003267021009806)|
 | SS-PFCE | Baseline for the deep transfer leanring of NIR spectral calibration of mango dry matter and melamine turbidity point prediction| [Mishra, 2021](https://www.sciencedirect.com/science/article/pii/S0169743921000514)|
+|NS-PFCE| Correct the effects of moisture and material scattering on tobacol NIR spectra|[Geng, et al., 2022](https://www.sciencedirect.com/science/article/abs/pii/S0026265X22006257)|
+|SS-PFCE|Correct the variation in tobacol NIR spectra with dection time |[Geng, et al, 2022](http://www.fxcsxb.com/fxcsxb/ch/reader/create_pdf.aspx?file_no=20220714&flag=1&journal_id=fxcsxb&year_id=2022)|
+|SS-PFCE|Correct the variation in soil NIR spectra with dection time |[Zhang, et al, 2022](http://www.analchem.cn/article/doi/10.19756/j.issn.0253-3820.211236)|
+|NS-, SS-, and FS-PFCE| A graphical user interface to perform calibration transfer for multivariate calibrations |[Mishra, et al., 2021](https://www.sciencedirect.com/science/article/pii/S0169743921001064)|
+
 
 ## Citation
 If you find this method useful in your research, we kindly ask that you cite the following paper:
