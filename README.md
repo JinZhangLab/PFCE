@@ -42,9 +42,7 @@ The PFCEs can be also used with python package at [pynir](https://pypi.org/proje
 | Method | Application | Reference |
 |--------|-------------|----------|
 | SS-PFCE | Batch-to-batch variability of fruit samples in portable spectroscopy | [Mishra, 2021](https://www.sciencedirect.com/science/article/pii/S0003267021005973) |
-
 | NS- and SS-PFCE | Calibration transfer from point spectrometers to visible/near-infrared spectral imaging machines | [Mishra, 2021](https://www.sciencedirect.com/science/article/pii/S0003267021009806)|
-
 | SS-PFCE | Baseline for the deep transfer leanring of NIR spectral calibration of mango dry matter and melamine turbidity point prediction| [Mishra, 2021](https://www.sciencedirect.com/science/article/pii/S0169743921000514)|
 
 ## Citation
