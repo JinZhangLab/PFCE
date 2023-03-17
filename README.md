@@ -39,6 +39,7 @@ This code is implemented in Matlab. To run the demo, simply execute the `demo_ta
 The PFCEs can be also used with python package at [pynir](https://pypi.org/project/pynir/), or online web server at [nir.chemoinfolab.com](https://nir.chemoinfolab.com).
 
 ## Successful applications
+
 | Method | Application | Reference |
 |--------|-------------|----------|
 | SS-PFCE | Batch-to-batch variability of fruit samples in portable spectroscopy | [Mishra, et al., 2021](https://www.sciencedirect.com/science/article/pii/S0003267021005973) |
@@ -48,9 +49,14 @@ The PFCEs can be also used with python package at [pynir](https://pypi.org/proje
 |SS-PFCE|Correct the variation in tobacol NIR spectra with dection time |[Geng, et al, 2022](http://www.fxcsxb.com/fxcsxb/ch/reader/create_pdf.aspx?file_no=20220714&flag=1&journal_id=fxcsxb&year_id=2022)|
 |SS-PFCE|Correct the variation in soil NIR spectra with dection time |[Zhang, et al, 2022](http://www.analchem.cn/article/doi/10.19756/j.issn.0253-3820.211236)|
 |NS-, SS-, and FS-PFCE| A graphical user interface to perform calibration transfer for multivariate calibrations |[Mishra, et al., 2021](https://www.sciencedirect.com/science/article/pii/S0169743921001064)|
-
+| NS-PFCE | Calibration for NIR spectra of non-homogeneous tobacco samples for non-destructive and rapid analysis | [Geng, et al., 2023](https://doi.org/10.1039/D2AY01805E) |
 
 ## Citation
+
 If you find this method useful in your research, we kindly ask that you cite the following paper:
 
 [1] J Zhang, BY Li, Y Hu, et. al. A Parameter-Free Framework for Calibration Enhancement of Near-Infrared Spectroscopy Based on Correlation Constraint, analytica chimica acta, 2021, 1142: 169-178. https://doi.org/10.1016/j.aca.2020.11.006
+
+## Contact
+
+If you have any questions or comments about PFCE, please [contact us](mailto:zhangjin@mail.nankai.edu.cn). We welcome feedback and suggestions for improvement!
