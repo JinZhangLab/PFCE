@@ -36,7 +36,7 @@ This code is implemented in Matlab. To run the demo, simply execute the `demo_ta
 ```matlab
     demo_tablet.m
 ```
-The PFCEs can be also used with python package at [pynir](https://pypi.org/project/pynir/), or online web server at [nir.chemoinfolab.com](https://nir.chemoinfolab.com).
+The PFCEs can be also used with python package [pynir](https://pypi.org/project/pynir/), or online web server at [nir.chemoinfolab.com](https://nir.chemoinfolab.com).
 
 ## Successful applications
 
