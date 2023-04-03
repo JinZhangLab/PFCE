@@ -4,9 +4,8 @@ PFCE is a versatile parameter-free calibration enhancement framework designed fo
 
 
 
-![TOC.PNG](.\TOC.PNG "TOC")
+![TOC.PNG](TOC.PNG "TOC")
 
-## 
 
 ## Available Methods
 
@@ -33,7 +32,7 @@ FS-PFCE is similar to NS-PFCE, but the reference information of the standard sam
 
 MT-PFCE is designed for the most general scenario where multiple instruments require calibration enhancement. This method can be used to simultaneously enhance the calibration of both the master and slave models. MT-PFCE can be adapted to a wide range of scenarios, such as SS-PFCE or FS-PFCE, by adjusting the conditions for the master model. Additionally, this method has the potential to model data with inherent hierarchical structures, similar to pre-training and fine-tuning in deep learning. This is an area for future work.
 
-## 
+
 
 ## Required Data
 
@@ -64,7 +63,7 @@ All the latest features of PFCE are now available in the python package [pynir](
 
 An online calibration platform for NIR spectroscopy, [nir.chemoinfolab.com](https://nir.chemoinfolab.com), enables the use of some simple functions of PFCE.
 
-## 
+
 
 ## Successful applications
 
