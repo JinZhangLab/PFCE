@@ -77,6 +77,7 @@ An online calibration platform for NIR spectroscopy, [nir.chemoinfolab.com](http
 | SS-PFCE               | Correct the variation in soil NIR spectra with dection time                                                                     | [Zhang, et al, 2022](http://www.analchem.cn/article/doi/10.19756/j.issn.0253-3820.211236)                                          |
 | NS-, SS-, and FS-PFCE | A graphical user interface to perform calibration transfer for multivariate calibrations                                        | [Mishra, et al., 2021](https://www.sciencedirect.com/science/article/pii/S0169743921001064)                                        |
 | NS-PFCE               | Calibration for NIR spectra of non-homogeneous tobacco samples for non-destructive and rapid analysis                           | [Geng, et al., 2023](https://doi.org/10.1039/D2AY01805E)                                                                           |
+| SS-PFCE | Calibration transfer of Near-Infrared Spectra for Soluble Solids Content Prediction across Different Fruits |  [Guo, et al., 2023](https://www.mdpi.com/2076-3417/13/9/5417)|
 
 ## Change log
 
