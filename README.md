@@ -90,8 +90,8 @@ An online calibration platform for NIR spectroscopy, [nir.chemoinfolab.com](http
 
 If you find this method useful in your research, we kindly ask that you cite the following paper:
 
-[1] Zhang J., Zhou X., Li B. PFCE2: A versatile parameter-free calibration enhancement framework for near-infrared spectroscopy [J]. Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy, 2023, 301: 122978. https://doi.org/10.1016/j.saa.2023.122978  
-[2] J Zhang, BY Li, Y Hu, et. al. A Parameter-Free Framework for Calibration Enhancement of Near-Infrared Spectroscopy Based on Correlation Constraint, analytica chimica acta, 2021, 1142: 169-178. https://doi.org/10.1016/j.aca.2020.11.006
+[1] J Zhang, X Zhou, BY Li. PFCE2: A versatile parameter-free calibration enhancement framework for near-infrared spectroscopy [J]. Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy, 2023, 301: 122978. https://doi.org/10.1016/j.saa.2023.122978  
+[2] J Zhang, BY Li, Y Hu, et. al. A Parameter-Free Framework for Calibration Enhancement of Near-Infrared Spectroscopy Based on Correlation Constraint [J]. analytica chimica acta, 2021, 1142: 169-178. https://doi.org/10.1016/j.aca.2020.11.006
 
 
 
